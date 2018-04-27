@@ -8,6 +8,7 @@ import {
   StyleSheet,
   TouchableHighlight,
 } from 'react-native';
+import { Card, Icon } from 'react-native-elements';
 
 @connect()
 class HomeScreen extends Component {
@@ -16,7 +17,9 @@ class HomeScreen extends Component {
 
     return (
       <View>
-        <View style={styles.hotContainer} />
+        <Card>
+          <Icon />
+        </Card>
       </View>
     );
   }
