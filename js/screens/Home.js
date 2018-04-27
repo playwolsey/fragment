@@ -18,7 +18,7 @@ class HomeScreen extends Component {
     return (
       <View>
         <Card>
-          <Icon />
+          <Icon name="rowing" />
         </Card>
       </View>
     );
