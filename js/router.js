@@ -12,6 +12,7 @@ import {
   createReduxBoundAddListener,
   createReactNavigationReduxMiddleware,
 } from 'react-navigation-redux-helpers';
+import { Icon } from 'react-native-elements';
 
 import HomeScreen from './screens/Home';
 import CatesScreen from './screens/products/Cates';
@@ -42,15 +43,15 @@ const Tabs = TabNavigator({
   Home: {
     screen: HomeScreen,
     navigationOptions: {
-      tabBarLabel: '首页',
-      // tabBarIcon: ({ tintColor }) => <Icon name="home" size={25} color={tintColor} />,
+      // tabBarLabel: '首页',
+      tabBarIcon: ({ tintColor }) => <Icon name="home" size={25} color={tintColor} />,
     },
   },
   Cates: {
     screen: CatesScreen,
     navigationOptions: {
-      tabBarLabel: '产品',
-      // tabBarIcon: ({ tintColor }) => <Icon name="layers" size={25} color={tintColor} />,
+      // tabBarLabel: '产品',
+      tabBarIcon: ({ tintColor }) => <Icon name="layers" size={25} color={tintColor} />,
     },
   },
   // Business: {
@@ -63,8 +64,8 @@ const Tabs = TabNavigator({
   Me: {
     screen: MeScreen,
     navigationOptions: {
-      tabBarLabel: '我的',
-      // tabBarIcon: ({ tintColor }) => <Icon name="perm-identity" size={25} color={tintColor} />,
+      // tabBarLabel: '我的',
+      tabBarIcon: ({ tintColor }) => <Icon name="perm-identity" size={25} color={tintColor} />,
     },
   },
 }, {
@@ -75,6 +76,7 @@ const Tabs = TabNavigator({
   lazyLoad: true,
   tabBarOptions: {
     activeTintColor: '#00acff',
+    showLabel: false,
   },
 });
 
