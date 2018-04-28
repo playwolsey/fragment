@@ -18,7 +18,10 @@ class HomeScreen extends Component {
     return (
       <View>
         <Card>
-          <Icon name="rowing" />
+          <Icon name="home" />
+        </Card>
+        <Card containerStyle={{ borderStyle: 'dashed', backgroundColor: '#eee' }}>
+          <Icon name="add" />
         </Card>
       </View>
     );
