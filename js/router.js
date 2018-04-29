@@ -132,7 +132,7 @@ const MainNavigator = StackNavigator({
   },
 }, {
   mode: 'screen',
-  // headerMode: 'none',
+  headerMode: 'none',
 });
 
 const AppNavigator = StackNavigator(
