@@ -16,11 +16,11 @@ class HomeScreen extends Component {
     const { navigation } = this.props;
 
     return (
-      <View>
+      <View style={styles.container}>
         <Card containerStyle={{ backgroundColor: '#04b5c6' }}>
           <Icon name="settings" color="#fff" />
         </Card>
-        <Card containerStyle={{ borderStyle: 'dashed', backgroundColor: '#eee' }}>
+        <Card containerStyle={{ borderStyle: 'dashed', backgroundColor: '#f0f1f5' }}>
           <Icon name="add" />
         </Card>
       </View>
@@ -30,34 +30,8 @@ class HomeScreen extends Component {
 
 const { width } = Dimensions.get('window');
 const styles = StyleSheet.create({
-  swiperContainer: {
-    height: 130,
-  },
-  wrapper: {},
-  slide: {
-    flex: 1,
-    justifyContent: 'center',
-    backgroundColor: 'transparent',
-  },
-  simg: {
-    width,
-    flex: 1,
-  },
-  hotContainer: {
-    backgroundColor: '#fff',
-    paddingLeft: 10,
-    paddingRight: 10,
-    marginTop: 10,
-  },
-  title: {
-    fontSize: 16,
-    paddingTop: 10,
-    paddingBottom: 10,
-  },
-  himg: {
-    height: 100,
-    marginBottom: 10,
-    // width: '100%',
+  container: {
+    backgroundColor: '#f0f1f5',
   },
 });
 
