@@ -142,6 +142,7 @@ const AppNavigator = StackNavigator(
   },
   {
     headerMode: 'none',
+    cardStyle: { backgroundColor: 'red' },
     mode: 'modal',
     navigationOptions: {
       gesturesEnabled: false,

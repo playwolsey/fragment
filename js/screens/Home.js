@@ -16,12 +16,12 @@ class HomeScreen extends Component {
     const { navigation } = this.props;
 
     return (
-      <View style={styles.container}>
+      <View style={styles.ttcontainer}>
         <Card containerStyle={{ backgroundColor: '#04b5c6' }}>
           <Icon name="settings" color="#fff" />
         </Card>
-        <Card containerStyle={{ borderStyle: 'dashed', backgroundColor: '#f0f1f5' }}>
-          <Icon name="add" />
+        <Card containerStyle={{ borderStyle: 'dashed', borderColor: '#999', backgroundColor: '#f0f1f5' }}>
+          <Icon name="add" color="#999" />
         </Card>
       </View>
     );
@@ -30,8 +30,9 @@ class HomeScreen extends Component {
 
 const { width } = Dimensions.get('window');
 const styles = StyleSheet.create({
-  container: {
+  ttcontainer: {
     backgroundColor: '#f0f1f5',
+    height: 400,
   },
 });
 

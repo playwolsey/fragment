@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 @connect()
 class ProductsScreen extends Component {
@@ -13,10 +13,21 @@ class ProductsScreen extends Component {
 
     return (
       <View>
-        <Text>xxx</Text>
+        <Text style={{ fontSize: 30 }}>xxx</Text>
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  bigblue: {
+    color: 'blue',
+    fontWeight: 'bold',
+    fontSize: 30,
+  },
+  red: {
+    color: 'red',
+  },
+});
 
 export default ProductsScreen;
